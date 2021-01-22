@@ -4,7 +4,7 @@ class Game {
     this.world = new World(); //TODO: where am I creating a new player and world?
     this.room = this.world.rooms;
     this.battleText = [];
-    console.log(this.world.rooms);
+
     //ROOM
     this.roomCounter = 0;
     this.currentRoomName = "";
