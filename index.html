@@ -1,66 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Tiny Dungeon</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Tiny Dungeon</h1>
     <main>
-        <section id="room-button-container">
-            <h2>Potions</h2>
-            <h2>Navigation</h2>
+      <section id="room-button-container">
+        <h2>Potions</h2>
+        <h2>Navigation</h2>
+      </section>
+
+      <section id="main-panel">
+        <section id="room-name-container">
+          <h2 id="room-name-heading"></h2>
+        </section>
+        <section id="top">
+          <section>
+            <article
+              id="player-name"
+              class="player-tags, detail-tags"
+            ></article>
+            <article
+              id="player-type"
+              class="player-tags, detail-tags"
+            ></article>
+          </section>
+          <section>
+            <article
+              id="computer-name"
+              class="computer-tags, detail-tags"
+            ></article>
+            <article
+              id="computer-type"
+              class="computer-tags, detail-tags"
+            ></article>
+          </section>
         </section>
 
-        <section id="main-panel">
-            <section id="room-name-container">
-                <h2 id="room-name-heading" ></h2>
-            </section>
-            <section id="top">
-                <section>
-                    <article id="player-name" class="player-tags, detail-tags"></article>
-                    <article id="player-type" class="player-tags, detail-tags"></article>
-                </section>
-                <section>
-                    <article id="computer-name" class="computer-tags, detail-tags"></article>
-                    <article id="computer-type"class="computer-tags, detail-tags"></article>
-                </section>
-            </section>
-            
-            <section id="mid">
-                <section id="player-panel" class="mid-panels">
-                    <input id="#name-input" placeholder="Who are you traveller?">
+        <section id="mid">
+          <section id="player-panel" class="mid-panels">
+            <input id="#name-input" placeholder="Who are you traveller?" />
             <p>Enter your name above and choose a character below to begin.</p>
-                    <label>Wizard - 20 AP, 45 HP<input id="wizard" type="radio" name="character-radio" value="wizard"></label>
-                        <label>Warrior - 10 AP, 65 HP<input id="warrior" type="radio" name="character-radio" value="warrior"></label>
-                            <label>Rogue - 15 AP, 50 HP<input id="rogue" type="radio" name="character-radio" value="rogue"></label>
-                    <button id="start-button" class="character-select">Begin</button>
+            <label
+              >Wizard - 20 AP, 45 HP<input
+                id="wizard"
+                type="radio"
+                name="character-radio"
+                value="wizard"
+            /></label>
+            <label
+              >Warrior - 10 AP, 65 HP<input
+                id="warrior"
+                type="radio"
+                name="character-radio"
+                value="warrior"
+            /></label>
+            <label
+              >Rogue - 15 AP, 50 HP<input
+                id="rogue"
+                type="radio"
+                name="character-radio"
+                value="rogue"
+            /></label>
+            <button id="start-button" class="character-select">Begin</button>
 
-                    <img src="" id="player-image">
-                </section>
-                <section id="battle-panel" class="mid-panels">
-                    <ul>
-                    </ul>
-                </section>
-                <section id="computer-panel" class="mid-panels">
-                    <img src="" id="computer-image">
-                </section>
-            </section>
-            <section id="lower">
-                <section>
-                    <article id="player-hp" class="stat-counters">HP</article>
-                <article id="player-ap" class="stat-counters">AP</article>
-                <article id="player-keys" class="stat-counters">Keys</article>
-                </section>
-                
-                <section>
-                    <article id="computer-hp" class="stat-counters">HP</article>
-                <article id="computer-ap" class="stat-counters">AP</article>
-                </section>
-            </section>
+            <img src="" id="player-image" />
+          </section>
+          <section id="battle-panel" class="mid-panels">
+            <ul></ul>
+          </section>
+          <section id="computer-panel" class="mid-panels">
+            <img src="" id="computer-image" />
+          </section>
         </section>
+        <section id="lower">
+          <section>
+            <article id="player-hp" class="stat-counters">HP</article>
+            <article id="player-ap" class="stat-counters">AP</article>
+            <article id="player-keys" class="stat-counters">Keys</article>
+          </section>
+
+          <section>
+            <article id="computer-hp" class="stat-counters">HP</article>
+            <article id="computer-ap" class="stat-counters">AP</article>
+          </section>
+        </section>
+      </section>
     </main>
 
     <script src="tools/tools.js"></script>
@@ -74,5 +103,5 @@
     <script src="player.js"></script>
     <script src="game.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

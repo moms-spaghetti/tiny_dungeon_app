@@ -1,178 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=UnifrakturCook:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&family=UnifrakturCook:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=KoHo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
-    font-family: 'New Rocker';
-    font-size: 65px;
-    margin: 0px;
-    padding: 0px;
+  font-family: "New Rocker";
+  font-size: 65px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 32px;
+  text-decoration: underline;
 }
 
 h2 {
-    font-family: 'New Rocker';
-    font-size: 35px;
-    margin: 0;
-    margin-bottom: 10px;
+  font-family: "New Rocker";
+  font-size: 35px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 main {
-    width: 1100px;
-    height: 600px;
-    margin: auto;
-    display: flex;
+  width: 1100px;
+  height: 600px;
+  margin: auto;
+  display: flex;
 }
 
-#room-button-container{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-right: 10px;
-    display: none;
+#room-button-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 10px;
+  display: none;
 }
 
-#main-panel{
-    width: 900px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#main-panel {
+  width: 900px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#top{
-    height: 50px;
-    width: 900px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+#top {
+  height: 50px;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-#mid{
-    height: fit-content;
-    width: 900px;
-    display: flex;
+#mid {
+  height: fit-content;
+  width: 900px;
+  display: flex;
 }
 
-#lower{
-    top: 520px;
-    height: 100px;
-    width: 900px;
-    position: fixed;
+#lower {
+  top: 520px;
+  height: 100px;
+  width: 900px;
+  position: fixed;
 }
 
-.player-tags{
-    width: 200px;
-    text-align: left;
-    display: block;
-    text-transform: capitalize;
+.player-tags {
+  width: 200px;
+  text-align: left;
+  display: block;
+  text-transform: capitalize;
 }
 
-.computer-tags{
-    width: 200px;
-    text-align: right;
-    display: block;
-    text-transform: capitalize;
+.computer-tags {
+  width: 200px;
+  text-align: right;
+  display: block;
+  text-transform: capitalize;
 }
 
-.detail-tags{
-    font-family: 'New Rocker';
-    font-size: 20px;
-    text-transform: capitalize;
+.detail-tags {
+  font-family: "New Rocker";
+  font-size: 20px;
+  text-transform: capitalize;
 }
 
-#room-name-container{
-    align-content: center;
-    justify-content: center;
-    display: flex;
+#room-name-container {
+  align-content: center;
+  justify-content: center;
+  display: flex;
 }
 
-.mid-panels{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+.mid-panels {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #battle-panel {
-    width: 500px;
+  width: 500px;
 }
 
-#lower{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.stat-counters{
-    display: flex;
-    width: 100px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    font-family: 'New Rocker';
-    display: none
+.stat-counters {
+  display: flex;
+  width: 100px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-family: "New Rocker";
+  display: none;
 }
 
-.room-button{
-    height: 60px;
-    width: 200px;
-    font-size: 12px;
+.room-button {
+  height: 60px;
+  width: 200px;
+  font-size: 12px;
 }
 
-ul{
-    overflow:auto;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#resetButton {
+  margin-top: 10px;
 }
 
-li{
-    font-size: 12px;
-    line-height: 23px;
-    font-family: 'KoHo';
-    font-weight: 300;
+ul {
+  overflow: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-input{
-    
-    margin-bottom: 10px;
+li {
+  font-size: 12px;
+  line-height: 23px;
+  font-family: "KoHo";
+  font-weight: 300;
 }
 
-button{
-    margin-bottom: 10px;
+input {
+  margin-bottom: 10px;
 }
 
-#player-image{
-    height: 180px;
-    border: 5px solid steelblue;
-    display: none;
+button {
+  margin-bottom: 10px;
 }
 
-#computer-image{
-    height: 180px;
-    border: 5px solid tomato;
-    display: none;
+#player-image {
+  height: 180px;
+  border: 5px solid steelblue;
+  display: none;
 }
 
-label{
-    font-family: 'New Rocker';
+#computer-image {
+  height: 180px;
+  border: 5px solid tomato;
+  display: none;
 }
 
-.potion-buttons{
-    width: 50px;
-    height: 70px;
-    font-size: 20px;
+label {
+  font-family: "New Rocker";
+}
+
+.potion-buttons {
+  width: 50px;
+  height: 70px;
+  font-size: 20px;
 }
